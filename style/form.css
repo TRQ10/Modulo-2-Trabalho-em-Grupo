@@ -1,0 +1,122 @@
+h1 {
+    color: white;
+}
+
+p {
+    color: black;
+}
+
+ul {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button,
+.true {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: blue;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button button:hover {
+    background-color: red;
+}
+
+.login-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 10rem;
+    height: 0.3rem;
+    background-color: red;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input,
+.true {
+    margin: 1rem 0;
+    padding: 0.21rem 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px black;
+}
+
+.input-box input-hover {
+    background-color: gray;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid red;
+}
+
+.input-box label,
+.true {
+    font-weight: 600;
+    color: black;
+}
+
+.input-box input::placeholder {
+    color: black;
+}
+
+@media screen and (max-width: 1330px) {
+    .form {
+    width: 100%;
+}
+    .true {
+        width: 100%;
+    }
+}
+
+@media screen and (max-witdh: 1064px){
+    .form {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10;
+        padding-right: 5rem;
+    }
+
+    .true {
+        margin-top: 0.5rem;
+        flex-direction: column;
+    }
+}
