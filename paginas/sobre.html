@@ -8,6 +8,117 @@
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="../style/index.css">
   <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
+  <style>
+    [class="main-image"] {
+      padding: 0px;
+      top: 0;
+      margin: 0px;
+      background-color: #FFFFFF;
+      background-position: top;
+      background-size: cover;
+      background-blend-mode: darken;
+      width: 100%;
+      height: 90rem;
+      position: relative;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .feature-icon {
+      width: 4rem;
+      height: 4rem;
+      border-radius: .75rem;
+    }
+
+    .icon-link>.bi {
+      margin-top: .125rem;
+      margin-left: .125rem;
+      fill: currentcolor;
+      transition: transform .25s ease-in-out;
+    }
+
+    .icon-link:hover>.bi {
+      transform: translate(.25rem);
+    }
+
+    .icon-square {
+      width: 3rem;
+      height: 3rem;
+      border-radius: .75rem;
+    }
+
+    .text-shadow-1 {
+      text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25);
+    }
+
+    .text-shadow-2 {
+      text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25);
+    }
+
+    .text-shadow-3 {
+      text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25);
+    }
+
+    .card-cover {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    .feature-icon-small {
+      width: 3rem;
+      height: 3rem;
+    }
+  </style>
 </head>
 
 <body>
@@ -122,7 +233,7 @@
       <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2"
         aria-labelledby="offcanvasNavbar2Label">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Frontenders</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
             aria-label="Close"></button>
         </div>
@@ -143,7 +254,7 @@
           </ul>
           <ul class="navbar-nav justify-content-center flex-grow-1 ">
             <div class="text-start mt-2 mp-2">
-              <button type="button" class="btn btn-outline-info btn-sm px-4 me-sm-3 fw-bold rounded-pill">Login</button>
+              <a href="../paginas/Login.html"><button type="button" class="btn btn-outline-info btn-sm px-4 me-sm-3 fw-bold rounded-pill">Login</button></a>
               <a href="../paginas/lista-de-espera.html"><button type="button" class="btn btn-outline-light btn-sm px-4 rounded-pill">Registro</button></a>
             </div>
           </ul>
@@ -152,8 +263,7 @@
     </div>
   </nav>
   <!--#Navbar Fim-->
-  <!--#Sobre Início-->
-  <section id="price-section">
+  <!--Área a se trabalhar-->
     <div class="main-image">
       <div class="container">
         <img class="img" src="../imagens/service.png"></img>
@@ -183,7 +293,7 @@
               <div class="wrap-price">
                 <div class="price-innerdetail text-center">
                   <h5>PLANO SIMPLES</h5>
-                  <p class="prices">$50</p>
+                  <p class="prices">50R$</p>
                   <div class="detail-pricing">
                     <span class="float-left"> <i class="bi bi-check2-circle"></i>Acesso a API Exclusiva</span>
                     <span class="float-right"><i class='bx bx-check'></i></span>
@@ -204,7 +314,7 @@
               <div class="wrap-price center-wrap">
                 <div class="price-innerdetail text-center">
                   <h5>PLANO STANDARD</h5>
-                  <p class="prices">$150</p>
+                  <p class="prices">150R$</p>
                   <div class="detail-pricing">
                     <span class="float-left"> <i class="bi bi-check2-circle"></i>Acesso a API Exclusiva</span>
                     <span class="float-right"><i class='bx bx-check'></i></span>
@@ -225,7 +335,7 @@
               <div class="wrap-price">
                 <div class="price-innerdetail text-center">
                   <h5>PLANO PRO</h5>
-                  <p class="prices">$350</p>
+                  <p class="prices">350R$</p>
                   <div class="detail-pricing">
                     <span class="float-left"> <i class="bi bi-check2-circle"></i>Acesso a API Exclusiva</span>
                     <span class="float-right"><i class='bx bx-check'></i></span>
@@ -245,9 +355,7 @@
           </div>
         </div>
       </div>
-  </section>
   </div>
-  <!--#Sobre Fim-->
   <!--#Footer início-->
   <section class="footer bg-dark">
     <div class="container">
