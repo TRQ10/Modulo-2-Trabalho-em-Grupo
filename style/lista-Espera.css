@@ -64,6 +64,9 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1));
   background-image: url(../imagens/low-poly-grid-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
 }
 
   .bg-indigo {
@@ -80,4 +83,29 @@
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   }
+  }
+
+  .form-signin {
+    max-width: 330px;
+    padding: 50px;
+  }
+  
+  
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .backgroundd12 {
+    background: #fff7e9;
+    padding: 100px 65px;
+    width: 495px;
+    border-radius: 20px;
   }
